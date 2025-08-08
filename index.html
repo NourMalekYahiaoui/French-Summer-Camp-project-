@@ -1,56 +1,90 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Summer Camp - Nour Malek</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Apprendre French</title>
+    <link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150x80?text=Summer+Camp+Logo" alt="Summer Camp Logo" class="logo">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../index.php">Apprendre French</a>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="/index.php">Home</a></li>
+        <li><a href="../Components/aboutus.php">About Us</a></li>
+        <li><a href="../Components/courses.php">Courses</a></li>
+        <li><a href="../Components/announcements.php">Announcements</a></li>
+        <li><a href="../Components/Main_Contribute_page.php">Contribute</a></li>
+        <li><a href="../Components/Contact_Us.php">Contact Us</a></li>
+      </ul>
+    </nav>
     </header>
-
-    <main>
-        <section class="hero">
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/FVFHi-tuq9o" frameborder="0" allowfullscreen></iframe>
-                </div>
+<main>
+    <!-- 0 Section: Description Section -->
+      <section id="description-section">
+        <div class="content">
+            <div class="image">
+                <img src="../Assets/images/home1.jpg" alt="">
             </div>
-            <div class="welcome-text">
-                <h1>Salut tout le monde!</h1>
-                <p>C'est moi Nour Malek. J'ai créé ce site web pour vous partager ce que j'ai appris dans le summer camp! Découvrez vous allez trouver plus de détails. À bientôt!</p>
+            <div class="text">
+                <h2>Salut tout le monde !</h2>
+                <p>Je suis <strong>Nour Malek</strong>,<br> participante au French Summer Camp 2025. 
+                <br>J’ai créé ce site pour partager un aperçu de ce que j’ai appris et vécu pendant cette belle expérience. J’espère que ça vous inspirera à apprendre le français avec enthousiasme !
+
+                </p><a href="#services-section" class="scroll-link">Find More</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="content-boxes">
-            <h2>Ce que j'ai appris</h2>
-            <div class="boxes-container">
-                <a href="cours-labed.html" class="content-box">
-                    <h3>Cours de Madame Labed Nada</h3>
-                    <p>Découvrez les leçons importantes enseignées par notre professeur.</p>
-                </a>
-                <a href="differences.html" class="content-box">
-                    <h3>Différences entre "..." et "..."</h3>
-                    <p>Les subtilités de la langue française expliquées.</p>
-                </a>
-                <a href="vocabulaire.html" class="content-box">
-                    <h3>Vocabulaire et expressions idiomatiques</h3>
-                    <p>Les mots et expressions utiles à connaître.</p>
-                </a>
-                <a href="malentendus.html" class="content-box">
-                    <h3>Les malentendus!</h3>
-                    <p>Les erreurs courantes et comment les éviter.</p>
-                </a>
+    <!-- first Section: Services Section -->
+    <section id="services-section">
+        <div class="services-content">
+        <div class="service-box" onclick="window.location.href='vocabulaire.html'">
+                <h3>Announcements</h3>
+                <p>Stay updated with the latest news, events, and job openings.</p>
             </div>
-        </section>
-    </main>
+            <div class="service-box" onclick="window.location.href='#courses-section'">
+                <h3>Online Courses</h3>
+                <p>Access a variety of online courses tailored for parents and caregivers.</p>
+            </div>
+            <div class="service-box" onclick="window.location.href='#contribution-section'">
+                <h3>Contributions</h3>
+                <p>Share resources, articles, and experiences with the community.</p>
+            </div>
+            <div class="service-box" onclick="window.location.href='#contribution-section'">
+                <h3>Contributions</h3>
+                <p>Share resources, articles, and experiences with the community.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 Summer Camp Project - Nour Malek</p>
-    </footer>
+    <!-- 2nd Section: Announcement-section -->
+    <section id="Announcement-section" class="reverse-layout">
+        <div class="content">
+            <div class="text">
+                <h2>Find trusted services to support your family’s needs.</h2>
+                <p>From babysitting and tutoring to sports coaching and school transportation, our Announcements section connects you with qualified professionals ready to help. Browse listings, post specific requests, and discover reliable support tailored to your family. Make parenting easier with resources you can trust!</p>
+                <a href="../Components/announcements.php" class="courses-link">Find More</a>
+            </div>
+            <div class="image">
+                <img src="../Assets/images/home3.jpg" alt="Image showcasing our courses">
+            </div>
+        </div>
+    </section>
+    
+</main>
+<footer>
+<?php include '../BiteEase/Components/Footer.php'; ?>
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
