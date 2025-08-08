@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre French</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../index.php">Apprendre French</a>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="/index.php">Home</a></li>
+        <li><a href="../Components/aboutus.php">About Us</a></li>
+        <li><a href="../Components/courses.php">Courses</a></li>
+        <li><a href="../Components/announcements.php">Announcements</a></li>
+        <li><a href="../Components/Main_Contribute_page.php">Contribute</a></li>
+        <li><a href="../Components/Contact_Us.php">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+<main>
+
+    <!-- 1stSection-->
+    <section id="Announcement-section" class="reverse-layout">
+        <div class="content">
+            <div class="text">
+                <h2>Find trusted services to support your family’s needs.</h2>
+                <p>From babysitting and tutoring to sports coaching and school transportation, our Announcements section connects you with qualified professionals ready to help. Browse listings, post specific requests, and discover reliable support tailored to your family. Make parenting easier with resources you can trust!</p>
+                <a href="../Components/announcements.php" class="courses-link">Find More</a>
+            </div>
+            <div class="image">
+                <img src="../Assets/images/home3.jpg" alt="Image showcasing our courses">
+            </div>
+        </div>
+    </section>
+    <!-- 2nd Section-->
+    <section id="tables">
+<div class="table-container">
+    <div class="expandable" onclick="toggleContent(this)">
+        <div class="first-header">
+            <span>🎵 Click here to see the audio table</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="content">
+            <div class="content-inner">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Column 1</th>
+                                <th>Audio Column</th>
+                                <th>Column 3</th>
+                                <th>Column 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Row 1 Col 1</td><td><audio controls><source src="audio1.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 2 Col 1</td><td><audio controls><source src="audio2.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 3 Col 1</td><td><audio controls><source src="audio3.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 4 Col 1</td><td><audio controls><source src="audio4.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 5 Col 1</td><td><audio controls><source src="audio5.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 6 Col 1</td><td><audio controls><source src="audio6.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 7 Col 1</td><td><audio controls><source src="audio7.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 8 Col 1</td><td><audio controls><source src="audio8.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 9 Col 1</td><td><audio controls><source src="audio9.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                            <tr><td>Row 10 Col 1</td><td><audio controls><source src="audio10.mp3" type="audio/mpeg"></audio></td><td>Text</td><td>Text</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleContent(element) {
+    const content = element.querySelector(".content");
+    const arrow = element.querySelector(".arrow");
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        arrow.textContent = "▼"; // down arrow
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        arrow.textContent = "▲"; // up arrow
+    }
+}
+</script>
+
+    </section>
+    
+</main>
+
+</body>
+</html>
