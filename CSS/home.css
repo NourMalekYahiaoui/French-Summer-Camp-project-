@@ -250,6 +250,10 @@ section {
     flex-direction: row; /* Image on the right for larger screens */
 }
 
+.anim-reverse-layout .content {
+    flex-direction: row; /* Image on the right for larger screens */
+}
+
 /* Section Styles */
 #services-section {
     background: var(--secondary-color); /* Updated background color */
@@ -328,6 +332,10 @@ section {
 
     .reverse-layout .content {
         flex-direction: column; /* Keeps the image on top for the second section on smaller screens */
+    }
+
+    .anim-reverse-layout .content {
+        flex-direction: column; /* Keeps the image on top for the animated section on smaller screens */
     }
 
     .content .text {
@@ -573,6 +581,10 @@ input[type="radio"] {
     width: 100%;
     height: auto;
 }
+.acc-card1 img {
+    width: 100%;
+    height: auto;
+}
 
 .acc-card-conent {
     padding: 16px;
@@ -604,4 +616,67 @@ input[type="radio"] {
 .acc-card-content .btn:hover {
     background-color: var(--text-color);
     color: var(--primary-color);   
+}
+
+#exp-anim {
+    background: var(--primary-color); /* Updated background color */
+    color: #333;
+}
+
+.anim-reverse-layout .content img{
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+.acc-list li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    color: var(---peach);
+    font-size: 16px;
+}
+
+.acc-card1{
+    width:300px;
+    height: 550px;
+    background-color: var(---peach);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    transform: translateY(-5px); /* Lift on hover */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.acc-card2{
+    width:300px;
+    height: 210px;
+    background-color: var(---peach);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    transform: translateY(-5px); /* Lift on hover */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.acc-card3{
+    width:300px;
+    height: 300px;
+    background-color: var(---peach);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    transform: translateY(-5px); /* Lift on hover */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+audio {
+    width: 250px; /* Adjust to your preferred size */
+    color:#f59c87
 }
