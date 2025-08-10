@@ -459,7 +459,7 @@ html {
 }
 .card{
     width:325px;
-    height: 450px;
+    height: 400px;
     background-color: var(---peach);
     border-radius: 8px;
     overflow: hidden;
